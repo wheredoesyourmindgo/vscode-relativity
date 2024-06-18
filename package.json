@@ -11,7 +11,9 @@
   ],
   "activationEvents": [
     "onCommand:relativeJumper.jumpUp",
-    "onCommand:relativeJumper.jumpDown"
+    "onCommand:relativeJumper.jumpDown",
+    "onCommand:relativeJumper.selectUp",
+    "onCommand:relativeJumper.selectDown"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -23,17 +25,35 @@
       {
         "command": "relativeJumper.jumpDown",
         "title": "Jump Down"
+      },
+      {
+        "command": "relativeJumper.selectUp",
+        "title": "Select Up"
+      },
+      {
+        "command": "relativeJumper.selectDown",
+        "title": "Select Down"
       }
     ],
     "keybindings": [
       {
         "command": "relativeJumper.jumpUp",
-        "key": "ctrl+alt+shift+g",
+        "key": "cmd+9",
         "when": "editorTextFocus"
       },
       {
         "command": "relativeJumper.jumpDown",
-        "key": "ctrl+alt+g",
+        "key": "cmd+8",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "relativeJumper.selectUp",
+        "key": "cmd+shift+9",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "relativeJumper.selectDown",
+        "key": "cmd+shift+8",
         "when": "editorTextFocus"
       }
     ]
