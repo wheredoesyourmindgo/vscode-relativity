@@ -65,8 +65,7 @@
     "watch": "tsc -watch -p ./",
     "pretest": "yarn run compile && yarn run lint",
     "lint": "eslint src --ext ts",
-    "test": "vscode-test",
-    "postinstall": "node ./node_modules/vscode/bin/install"
+    "test": "vscode-test"
   },
   "devDependencies": {
     "@types/vscode": "^1.90.0",
