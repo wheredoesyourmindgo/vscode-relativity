@@ -1,0 +1,61 @@
+{
+  "name": "relative-jumper",
+  "displayName": "relative-jumper",
+  "description": "Jump lines relative to your cursor.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:relativeJumper.jumpUp",
+    "onCommand:relativeJumper.jumpDown"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "relativeJumper.jumpUp",
+        "title": "Jump Up"
+      },
+      {
+        "command": "relativeJumper.jumpDown",
+        "title": "Jump Down"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "relativeJumper.jumpUp",
+        "key": "ctrl+alt+shift+g",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "relativeJumper.jumpDown",
+        "key": "ctrl+alt+g",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0"
+  }
+}
