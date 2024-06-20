@@ -1,6 +1,6 @@
 # Relativity
 
-Relativity is a Visual Studio Code extension that allows you to quickly jump and select lines in your code editor relative to your current line number. It's designed to enhance your productivity by providing easy-to-use commands for navigating through your code.
+Relativity is a Visual Studio Code extension that allows you to quickly jump and (optionally) select lines in your code editor relative to your current line number.
 
 ## Features
 
@@ -13,7 +13,7 @@ Relativity is a Visual Studio Code extension that allows you to quickly jump and
 
 1. Open Visual Studio Code.
 2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
-3. Search for `Relativity`.
+3. Search for `Relativity_`.
 4. Click `Install` to install the extension.
 5. Reload Visual Studio Code to activate the extension.
 
