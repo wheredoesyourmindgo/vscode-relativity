@@ -1,6 +1,6 @@
 {
   "name": "vscode-relativity",
-  "displayName": "Relativity",
+  "displayName": "Relativity_",
   "description": "A Visual Studio Code extension that allows you to jump and select lines relatively.",
   "version": "0.2.0",
   "license": "MIT",
@@ -19,7 +19,8 @@
     "code",
     "select",
     "vscode",
-    "extension"
+    "extension",
+    "goto"
   ],
   "activationEvents": [],
   "contributes": {
