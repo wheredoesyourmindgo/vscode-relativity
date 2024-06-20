@@ -1,6 +1,6 @@
 {
-  "name": "relative-jumper",
-  "displayName": "Relative Jumper",
+  "name": "vscode-relativity",
+  "displayName": "Relativity",
   "description": "Jump lines relative to your cursor.",
   "version": "0.1.3",
   "license": "MIT",
@@ -11,44 +11,45 @@
     "Other"
   ],
   "main": "./out/extension.js",
+  "icon": "resources/icon.webp",
   "activationEvents": [],
   "contributes": {
     "commands": [
       {
-        "command": "relativeJumper.jumpUp",
+        "command": "relativity.jumpUp",
         "title": "Jump Up"
       },
       {
-        "command": "relativeJumper.jumpDown",
+        "command": "relativity.jumpDown",
         "title": "Jump Down"
       },
       {
-        "command": "relativeJumper.selectUp",
+        "command": "relativity.selectUp",
         "title": "Select Up"
       },
       {
-        "command": "relativeJumper.selectDown",
+        "command": "relativity.selectDown",
         "title": "Select Down"
       }
     ],
     "keybindings": [
       {
-        "command": "relativeJumper.jumpUp",
+        "command": "relativity.jumpUp",
         "key": "cmd+9",
         "when": "editorTextFocus"
       },
       {
-        "command": "relativeJumper.jumpDown",
+        "command": "relativity.jumpDown",
         "key": "cmd+8",
         "when": "editorTextFocus"
       },
       {
-        "command": "relativeJumper.selectUp",
+        "command": "relativity.selectUp",
         "key": "cmd+shift+9",
         "when": "editorTextFocus"
       },
       {
-        "command": "relativeJumper.selectDown",
+        "command": "relativity.selectDown",
         "key": "cmd+shift+8",
         "when": "editorTextFocus"
       }
@@ -57,7 +58,7 @@
   "publisher": "wheredoesyourmindgo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wheredoesyourmindgo/vscode-relative-jumper"
+    "url": "https://github.com/wheredoesyourmindgo/vscode-relativity"
   },
   "scripts": {
     "vscode:prepublish": "yarn run compile",

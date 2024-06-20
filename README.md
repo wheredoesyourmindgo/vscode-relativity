@@ -1,4 +1,4 @@
-# Relative Jumper
+# Relativity
 
 ## Default Keybindings
 

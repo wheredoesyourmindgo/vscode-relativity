@@ -29,10 +29,10 @@ export function activate(context: vscode.ExtensionContext) {
     }
   };
 
-  const jumpUp = vscode.commands.registerCommand('relativeJumper.jumpUp', () => jump('up', false));
-  const jumpDown = vscode.commands.registerCommand('relativeJumper.jumpDown', () => jump('down', false));
-  const selectUp = vscode.commands.registerCommand('relativeJumper.selectUp', () => jump('up', true));
-  const selectDown = vscode.commands.registerCommand('relativeJumper.selectDown', () => jump('down', true));
+  const jumpUp = vscode.commands.registerCommand('relativity.jumpUp', () => jump('up', false));
+  const jumpDown = vscode.commands.registerCommand('relativity.jumpDown', () => jump('down', false));
+  const selectUp = vscode.commands.registerCommand('relativity.selectUp', () => jump('up', true));
+  const selectDown = vscode.commands.registerCommand('relativity.selectDown', () => jump('down', true));
 
   context.subscriptions.push(jumpUp);
   context.subscriptions.push(jumpDown);
