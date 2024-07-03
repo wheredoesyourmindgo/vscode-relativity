@@ -45,22 +45,22 @@
     "keybindings": [
       {
         "command": "relativity.jumpUp",
-        "key": "cmd+9",
+        "key": "ctrl+9",
         "when": "editorTextFocus"
       },
       {
         "command": "relativity.jumpDown",
-        "key": "cmd+8",
+        "key": "ctrl+8",
         "when": "editorTextFocus"
       },
       {
         "command": "relativity.selectUp",
-        "key": "cmd+shift+9",
+        "key": "ctrl+shift+9",
         "when": "editorTextFocus"
       },
       {
         "command": "relativity.selectDown",
-        "key": "cmd+shift+8",
+        "key": "ctrl+shift+8",
         "when": "editorTextFocus"
       }
     ]

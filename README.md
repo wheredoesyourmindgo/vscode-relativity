@@ -19,10 +19,10 @@ Relativity is a Visual Studio Code extension that allows you to quickly jump and
 
 ### Default Keybindings
 
-- `cmd+9`: Jump Up
-- `cmd+8`: Jump Down
-- `cmd+shift+9`: Select Up
-- `cmd+shift+8`: Select Down
+- `ctrl+9`: Jump Up
+- `ctrl+8`: Jump Down
+- `ctrl+shift+9`: Select Up
+- `ctrl+shift+8`: Select Down
 
 You can also customize these keybindings in your VS Code `keybindings.json` file.
 
