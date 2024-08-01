@@ -63,7 +63,18 @@
         "key": "ctrl+shift+8",
         "when": "editorTextFocus"
       }
-    ]
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Relativity",
+      "properties": {
+        "relativity.selectEntireLine": {
+          "type": "boolean",
+          "default": false,
+          "description": "Select entire starting and ending line when using selectUp or selectDown."
+        }
+      }
+    }
   },
   "publisher": "wheredoesyourmindgo",
   "repository": {

@@ -13,7 +13,7 @@ Relativity is a Visual Studio Code extension that allows you to quickly jump and
 
 1. Open Visual Studio Code.
 2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
-3. Search for `Relativity_`.
+3. Search for `Relativity`.
 4. Click `Install` to install the extension.
 5. Reload Visual Studio Code to activate the extension.
 
@@ -33,10 +33,13 @@ You can also customize these keybindings in your VS Code `keybindings.json` file
 - `relativity.selectUp`: Select lines as you jump up.
 - `relativity.selectDown`: Select lines as you jump down.
 
-## Contributing
+## Settings
 
-If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on [GitHub](https://github.com/wheredoesyourmindgo/vscode-relativity).
+- **Select Entire Line**: A user-configurable setting that, when set to true, will select the entire starting and ending lines when using `selectUp` or `selectDown`. By default, this is set to false, and the extension will only select based on the cursor column.
 
-## License
+To configure this setting, add the following to your `settings.json`:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```json
+{
+  "relativity.selectEntireLine": false
+}
